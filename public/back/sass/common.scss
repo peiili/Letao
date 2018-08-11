@@ -12,6 +12,12 @@ ul, ol{
 img {
     display: block;
 }
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
 
 //设置首页内容
 .main {
@@ -25,4 +31,30 @@ img {
         }
     }
 }
-//设置
+//设置用户管理页面 
+.main {
+    .right {
+        .user-contend {
+            table{
+                th,td {
+                    text-align: center;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+//一级分类页面
+
+.main {
+    .right {
+        .category-content {
+           .btn {
+               margin-bottom:15px;
+           }
+        }
+    }
+}
+
+//二级分类页面;

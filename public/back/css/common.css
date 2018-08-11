@@ -15,8 +15,24 @@ img {
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
 .main .right .charts #bar, .main .right .charts #pipe {
   height: 400px;
+}
+
+.main .right .user-contend table th, .main .right .user-contend table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.main .right .category-content .btn {
+  margin-bottom: 15px;
 }
 
 /*# sourceMappingURL=common.css.map */

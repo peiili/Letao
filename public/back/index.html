@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/echarts/echarts.min.js"></script>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>首页</title>
+</head>
+
+<body>
+    <div class="main">
+        <!-- 左边栏 -->
+        <div class="left">
+            <div class="tit">
+                <h3>ITCAST</h3>
+            </div>
+            <div class="icon">
+                <img src="./images/default.png" alt="">
+            </div>
+            <p>超级管理员</p>
+            <ul>
+                <li>
+                    <a href="./user.html">
+                        <i class="glyphicon glyphicon-user"></i>
+                        用户管理
+                    </a>
+                </li>
+                <li class="libtn">
+                    <a href="#">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                        分类管理
+                    </a>
+                    <div>
+                        <a href="./category.html"> 一级分类</a>
+                    </div>
+                    <div>
+                        <a href="./subcategory.html">二级分类</a>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="./product.html">
+                        <i class="glyphicon glyphicon-tags"></i>
+                        商品管理
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="right">
+            <div class="tit">
+                <span class="glyphicon glyphicon-align-justify"></span>
+                <span class="glyphicon glyphicon-log-in  logout"></span>
+            </div>
+
+            <div class="container-fluid charts">
+                <div class="nav">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="#">管理系统</a>
+                        </li>
+                        <li>
+                            <a href="#">首页</a>
+                        </li>
+
+                    </ol>
+                </div>
+
+                <div class="bar col-md-6" id="bar">
+                    <!-- 条形图 -->
+                </div>
+                <div class="pipe col-md-6" id="pipe">
+                    <!-- 饼状图 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/index.js"></script>
+<script src="./js/common.js"></script>

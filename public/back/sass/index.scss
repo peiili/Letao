@@ -1,0 +1,115 @@
+@import "common.scss";
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size:14px;
+}
+
+//固定样式
+
+.main {
+    height: 100%;
+    position: relative;
+    padding-left:180px;
+    transition:all 1s;
+    >.left {
+        left: 0px;
+        position: absolute;
+        width: 180px;
+        height: 100%;
+        background-color: #222d32;
+        transition: all 1s;
+        color:white;
+        text-align: center;
+       
+        //左侧头部
+        .tit{
+            height: 50px;
+            width: 180px;
+            background-color: #367fa9;
+            text-align:center;
+            color:white;
+            overflow: hidden;
+            h3 {
+                line-height: 50px;
+                margin:0;
+            }
+          
+        }
+        // 左侧用户头像
+        .icon{
+            margin:30px auto 10px;
+            height: 80px;
+            width: 80px;
+            border-radius:50%;
+            overflow: hidden;
+            
+            img {
+                height: 100%;
+                width: 100%;
+            }
+           
+        }
+        p {
+            font-size:18px;
+        }
+        ul {
+            margin-top:50px;
+            font-size: 14px;
+            li {
+                height: 50px;
+                width: 100%;
+                overflow: hidden;
+                box-sizing:border-box;
+                transition:all 0.5s;
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 50px;
+                    text-align:center;
+                    line-height: 50px;
+                    i {
+                        margin-right:5px;
+                    }
+                }
+                >div {
+                    height: 50px;
+                    line-height: 50px;
+                }
+            }
+            .active1 {
+                height: 150px;
+            }
+        .bgColor {
+                background-color:#1d1f21;
+                border-left:3px solid #105988;
+            }
+        }
+    }
+    .active {
+        left:-180px;
+    }
+    .right {
+        width: 100%;
+      
+        height: 100%;
+        .tit {
+            height: 50px;
+            background-color: #3c8dbc;
+            font-size:20px;
+            color:white;
+            
+            padding:12px 15px;
+            .logout {
+                float:right;
+                font-size:20px;
+            }
+        }
+       
+    }
+ 
+} 
+.padd {
+        padding-left:0;
+    }

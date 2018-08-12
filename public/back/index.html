@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- 登陆验证 -->
+<script src="./lib/jquery/jquery.min.js"></script>
+<script>
+    $.ajax({
+        url: "/employee/checkRootLogin",
+        type: "get",
+        success: function (res) {
+            console.log(res);
+            //返回值为400则没登陆;
+            if (res.error == 400) {
+                  //将本页面的地址存起来;
+                  window.sessionStorage.setItem("href", window.location.href);
+                window.location.href = 'login.html';
+              
+            }
+        }
+    })
+</script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
